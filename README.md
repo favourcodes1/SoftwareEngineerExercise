@@ -19,7 +19,25 @@ This Java command-line tool processes an input text file using specified data op
 
 ### Compile
 ```bash
-javac -d out src/org/favourogubuike/**/*.java
+# Software Engineer Exercise
+
+This project contains a Java CLI tool for string processing with multithreading support.
+
+## Structure
+
+- `src/main/java`: main source code  
+- `src/test/java`: test classes  
+- `libs`: external libraries (JUnit)  
+- `bin`: compiled classes (ignored)  
+
+## How to Build and Run
+
+Compile:
+
+```bash
+# Example PowerShell commands
+$files = Get-ChildItem -Recurse -Filter *.java -Path src\main\java,src\test\java | ForEach-Object { $_.FullName }
+javac -cp ".;libs\junit-platform-console-standalone-1.9.3.jar" -d bin $files
 ```
 
 ### Run
@@ -34,3 +52,7 @@ java -cp out org.favourogubuike.Main \
 
 ## Tests
 Run using any JUnit 5 compatible runner or from an IDE.
+
+## Run tests:
+
+java -jar libs\junit-platform-console-standalone-1.9.3.jar --class-path bin --scan-class-path

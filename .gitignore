@@ -1,17 +1,18 @@
-# Compiled Java class files
+# Ignore compiled class files
 bin/
 out/
 target/
 
-# IDE folders
+# VS Code settings
 .vscode/
-*.iml
-.idea/
 
-# Logs and temp files
+# Logs and temp
 *.log
 *.tmp
 
-# OS files
+# System files
 .DS_Store
 Thumbs.db
+
+# Ignore JARs (optional)
+libs/*.jar
