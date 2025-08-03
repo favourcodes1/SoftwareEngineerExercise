@@ -54,5 +54,4 @@ java -cp out org.favourogubuike.Main \
 Run using any JUnit 5 compatible runner or from an IDE.
 
 ### Run tests:
-
-java -jar libs\junit-platform-console-standalone-1.9.3.jar --class-path bin --scan-class-path
+```java -jar libs\junit-platform-console-standalone-1.9.3.jar --class-path bin --scan-class-path```
